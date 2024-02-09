@@ -28,6 +28,11 @@ nav a {
   text-decoration: none; /*Aqui le doy no decoracion al texto de las etiquetas <a> */
 }
 
+nav a:hover {
+  color: #c78c19; /*cambia  el color cuando pasamos el mouse por encima*/
+  text-decoration: underline; /*que  se subraye el texto cuando pasamos el mouse por encima*/
+}
+
 .productos {
   width: 940px;
   margin: 0 auto;
@@ -47,9 +52,21 @@ nav a {
   border-radius: 10px;   /*Para darle la esquina redonda a los cuadros*/
 }
 
+.productos li:hover {
+  border-color: #c78c19; /*me coloca color naranja al borde cuando pasamos el mouse por encima*/
+}
+
+.productos li:active {
+  border-color: #088c19; /*active es para  cuando damos click y mantenemos pulsado y se coloca en verde*/
+}
+
 .productos h2 {
   font-size: 30px;
   font-weight: bold;
+}
+
+.productos li:hover h2 {
+  font-size: 33px; /*se agregar un hover al h2 por que anteriormente  estaba fijo*/
 }
 
 .producto-descripcion {
@@ -60,4 +77,16 @@ nav a {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(img/bg.jpg);/*se importa la imagen, no se utiliza color y el la coloca varias veces*/
+  padding: 40px;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin: 20px;
 }
