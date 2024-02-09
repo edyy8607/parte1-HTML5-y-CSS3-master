@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="productos.css">
-  <title>Productos - Barberia Alura</title>
-</head>
-<body>
-  <header>
-    <h1><img src="img/logo.png"></h1>
-    <ul>
-      <li>Home</li>
-      <li>Productos</li>
-      <li>Contacto</li>
-    </ul>
-  </header>
-</body>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css"><!--  es un  archivo que se utiliza para resetear todos los estilos por defecto de los elementos -->
+    <!-- https://meyerweb.com/eric/tools/css/reset/ -->
+    <link rel="stylesheet" href="productos.css">
+    <title>Productos - Barberia Alura</title>
+  </head>
+
+  <body>
+    <header>
+      
+      <div class="caja">
+        <h1><img src="img/logo.png"></h1>
+        
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+      <ul class="productos">
+        <li>
+          <h2>Cabello</h2>
+          <img src="img/cabello.jpg" alt="">
+          <p class="producto-descripcion">Con tijera o máquina, a gusto con el cliente</p>
+          <p class="producto-precio">$ 10.00</p>          
+        </li>
+        <li>
+          <h2>Barba</h2>
+          <img src="img/barba.jpg" alt="">
+          <p class="producto-descripcion">Corte y diseño profesional de barba</p>
+          <p class="producto-precio">$ 08.00</p>          
+        </li>
+        <li>
+          <h2>Cabello +  Barba</h2>          
+          <img src="img/cabello+barba.jpg" alt="">
+          <p class="producto-descripcion">Paquete completo de cabello y barba</p>
+          <p class="producto-precio">$ 15.00</p>
+        </li>
+      </ul>
+    </main>
+  </body>
+
 </html>
