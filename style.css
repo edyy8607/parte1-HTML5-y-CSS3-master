@@ -1,48 +1,129 @@
-.titulo-principal{
-  padding-left: 30px;
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
 }
 
-#banner {
-  width: 100%;
+.caja {
+  width: 940px;
+  /* ancho de la caja */
+  position: relative;
+  /*posiciono la caja estatica*/
+  margin: 0 auto;
 }
 
-.principal {
-  background: #cccccc;
-  padding: 20px;
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
 }
 
-.titulo-centralizado {
-  text-align: center;
+nav li {
+  display: inline;
+  /*me coloca los elementos del menu uno enseguida del otro*/
+  margin: 0 0 0 15px;
+  /*espacio entre cada elemento del menú*/
 }
 
-p {
-  text-align: center;
+nav a {
+  text-transform: uppercase;
+  /*Aqui  le doy mayusculas al texto de las etiquetas <a> */
+  color: #000000;
+  font-weight: bold;
+  /*Aqui le doy negrita al texto de las etiquetas <a> */
+  font-size: 22px;
+  text-decoration: none;
+  /*Aqui le doy no decoracion al texto de las etiquetas <a> */
 }
 
-em strong {
-  color: red;
+nav a:hover {
+  color: #c78c19;
+  /*cambia  el color cuando pasamos el mouse por encima*/
+  text-decoration: underline;
+  /*que  se subraye el texto cuando pasamos el mouse por encima*/
 }
 
-#mision {
-  font-size: 20px;
+.productos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
 }
 
-.diferenciales {
-  background: #ffffff;
-  padding: 30px;
-}
-
-.items {
-  font-style: italic;
-}
-
-ul {
+.productos li {
   display: inline-block;
+  text-align: center;
+  width: 30%;
   vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+  /*background-color: #cccccc;  */
+  /*Era un visual para ver bien el contenedor, pero no se usara*/
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  /*Para darle la esquina redonda a los cuadros*/
 }
 
-.imagenDiferenciales {
+.productos li:hover {
+  border-color: #c78c19;
+  /*me coloca color naranja al borde cuando pasamos el mouse por encima*/
+}
+
+.productos li:active {
+  border-color: #088c19;
+  /*active es para  cuando damos click y mantenemos pulsado y se coloca en verde*/
+}
+
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
+  /*se agregar un hover al h2 por que anteriormente  estaba fijo*/
+}
+
+.producto-descripcion {
+  font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(img/bg.jpg);
+  /*se importa la imagen, no se utiliza color y el la coloca varias veces*/
+  padding: 40px;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin: 20px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+form input {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
   width: 50%;
 }
