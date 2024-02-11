@@ -1,53 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <!--  es un  archivo que se utiliza para resetear todos los estilos por defecto de los elementos -->
-    <!-- https://meyerweb.com/eric/tools/css/reset/ -->
-    <link rel="stylesheet" href="style.css">
-    <title>Productos - Barberia Alura</title>
-  </head>
 
-  <body>
-    <header>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <!--es un  archivo que se utiliza para resetear todos los estilos por defecto de los elementos -->
+  <!-- https://meyerweb.com/eric/tools/css/reset/ -->
+  <link rel="stylesheet" href="style.css">
+  <title>Productos - Barberia Alura</title>
+</head>
 
-      <div class="caja">
-        <h1><img src="img/logo.png"></h1>
+<body>
+  <header>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="caja">
+      <h1><img src="img/logo.png" alt="Logotipo barbería"></h1>
+      <!--alt es para  el caso q no cargue la imagen me coloca las palabras-->
 
-    </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <main>
-      <form action="">
+  </header>
 
-        <label for="nombreapellido">Nombre y Apellido</label> <!--  Esto es un label, se le asigna el nombre del input -->
-        <input type="text" id="nombreapellido">
+  <main>
+    <form action="">
 
-        <label for="correoelectronico">Correo Electrónico</label>
-        <input type="text" id="correoelectronico">
+      <label for="nombreapellido">Nombre y Apellido</label> <!--  Esto es un label, se le asigna el nombre del input -->
+      <input type="text" id="nombreapellido" class="input-padron" required>
 
-        <label for="telefono">Teléfono</label>
-        <input type="text" id="telefono">
+      <label for="correoelectronico">Correo Electrónico</label>
+      <input type="email" id="correoelectronico" class="input-padron" required placeholder="ejemplo@ejemplo.com">
 
-        <input type="submit" value="Enviar Formulario"> <!--  es un  botón que se utiliza para enviar el formulario -->
-      </form>
-    </main>
 
-    <footer>
-      <img src="img/logo-blanco.png" alt="" id="logo-pie">
-      <p class="copyright">© 2023 Barbería Alura | Todos los derechos reservados</p>
-    </footer>
-  </body>
+      <!-- el input type= es para colocar el modo como se va a ingresar la información en ese campo, email es para validar si tiene una estructura de text, email, tel -->
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" class="input-padron" required
+        placeholder="+34 123456789"><!--el placeholder es para una ayuda al usuario para llenar el formulario-->
+      <!-- required significa que es un campo requerido para que se envie el formulario -->
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+      <fieldset>
+
+        <legend>¿Como le gustaria que lo contactemos?</legend>
+
+        <!--cuando agrego name contacto a los tres ya solo selecciona 1 boton-->
+        <label for="radio-email"><input type="radio" id="radio-email" name="contacto" value="email">Email</label>
+
+        <label for="radio-telefono"><input type="radio" id="radio-telefono" name="contacto"
+            value="telefono">Telefono</label>
+
+        <label for="radio-whatsapp"><input type="radio" id="radio-whatsapp" name="contacto" value="whatsapp"
+            checked>Whatsapp</label>
+
+      </fieldset><!--el fieldset para que este todo en una sola fila y no por debajo del otro-->
+
+      <fieldset>
+        <!-- estoy haciendo una caja de opciones -->
+        <legend>¿En cual horario prefiere ser atendido?</legend>
+        <!--el  legend es para poner un titulo a la caja de opciones-->
+        <!-- La etiqueta select esta compuesta por uno o más option, cada uno con un valor y texto -->
+        <select>
+          <option>Mañana</option>
+          <option>Tarde</option>
+          <option>Noche</option>
+        </select>
+
+      </fieldset>
+      <!-- el checked es para dejar seleccionado el cuadro y en caso que el usuario no quiera lo desabilita -->
+      <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir nuestras ofertas y
+        promociones?</label>
+
+      <input type="submit" value="Enviar Formulario" class="enviar">
+      <!--  es un  botón que se utiliza para enviar el formulario -->
+    </form>
+  </main>
+
+  <footer>
+    <img src="img/logo-blanco.png" alt="Logotipo barbería" id="logo-pie">
+    <p class="copyright">© 2023 Barbería Alura | Todos los derechos reservados</p>
+  </footer>
+</body>
 
 </html>
