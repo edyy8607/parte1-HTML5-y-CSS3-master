@@ -1,3 +1,10 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; */
+}
+
 header {
   background-color: #bbbbbb;
   padding: 20px 0;
@@ -142,8 +149,10 @@ form legend {
   background-color: orange;
   border: none;
   border-radius: 5px;
-  transition: 1s all;/*<!---Transicion-de-fondo-del-boton-enviar-formulario--->*/
-  cursor: pointer;/*<!---Cambia el cursor al hacer click sobre el boton-->*/
+  transition: 1s all;
+  /*<!---Transicion-de-fondo-del-boton-enviar-formulario--->*/
+  cursor: pointer;
+  /*<!---Cambia el cursor al hacer click sobre el boton-->*/
 }
 
 .enviar:hover {
@@ -157,12 +166,52 @@ table {
 }
 
 thead {
-  background: #555555;/*color al encabezado pero el fondo*/
-  color: white;/*color a la letra del encabezado*/
+  background: #555555;
+  /*color al encabezado pero el fondo*/
+  color: white;
+  /*color a la letra del encabezado*/
   font-weight: bold;
 }
 
-td, th {
-  border: 1px solid #000000;/*le doy un borde, negrilla y color*/
-  padding:  8px 15px;/*le doy espaciamiento a las celdas*/
+td,
+th {
+  border: 1px solid #000000;
+  /*le doy un borde, negrilla y color*/
+  padding: 8px 15px;
+  /*le doy espaciamiento a las celdas*/
+}
+
+/*CSS para nuestra pagina inicial*/
+
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.imagenDiferenciales {
+  width: 60%;
 }
